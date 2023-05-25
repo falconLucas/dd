@@ -2,4 +2,8 @@ build/
 *.o
 *.o.d
 *.c.d
+input/
 output/
+__pycache__/
+*.pyc
+.vscode/
