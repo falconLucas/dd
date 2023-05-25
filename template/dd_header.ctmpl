@@ -1,0 +1,11 @@
+#ifndef DD_PROTOCOL_H
+#define DD_PROTOCOL_H
+
+#include "datagram-converter.h"
+#include <stdint.h>
+
+int dd_encode(uint8_t *buffer, size_t buffer_size, size_t *buffer_size_used);
+int dd_decode(uint8_t *buffer, size_t buffer_size);
+
+<TYPEDEFS>
+#endif // DD_PROTOCOL_H

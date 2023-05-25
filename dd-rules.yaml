@@ -1,0 +1,114 @@
+Fields:
+  Key:
+    Type: str
+    UsedFor: all
+    GenerateCode: true
+    IsMeta: false
+    Required: true
+  Format:
+    Type: str
+    UsedFor: 
+    - String
+    - Integer
+    - Float
+    GenerateCode: true
+    IsMeta: false
+    Required: false
+  Path:
+    Type: str
+    UsedFor: all
+    GenerateCode: false
+    IsMeta: false
+    Required: true
+  Name:
+    Type: str
+    UsedFor: all
+    GenerateCode: false
+    IsMeta: true
+    Required: true
+  Type:
+    Type: str
+    UsedFor: all
+    GenerateCode: false
+    IsMeta: true
+    Required: true
+  Context:
+    Type: str
+    UsedFor: all
+    GenerateCode: false
+    IsMeta: true
+    Required: true
+  ValueDefault:
+    Type: str
+    UsedFor: none
+    GenerateCode: false
+    IsMeta: true
+    Required: false
+  ValueMax:
+    Type: 
+    - int
+    - float
+    UsedFor:
+    - Integer
+    - Float
+    GenerateCode: false
+    IsMeta: true
+    Required: false
+  ValueMin:
+    Type:
+    - int
+    - float
+    UsedFor:
+    - Integer
+    - Float
+    GenerateCode: false
+    IsMeta: true
+    Required: false
+  Resolution:
+    Type:
+    - int
+    - float
+    UsedFor:
+    - Integer
+    - Float
+    GenerateCode: false
+    IsMeta: true
+    Required: false
+  Encoding:
+    Type: str
+    UsedFor: 
+    - String
+    GenerateCode: false
+    IsMeta: true
+    Required: false
+  Unit:
+    Type: str
+    UsedFor: 
+    - Integer
+    - Float
+    GenerateCode: false
+    IsMeta: true
+    Required: false
+MetadataWhitelist:
+- Name
+- Type
+- Context
+- Key
+- Parent
+- Description
+- ValueDefault
+- ValueMin
+- ValueMax
+- Resolution
+- Unit
+- Format
+- Encoding
+- Path
+Templates:
+  leaftype: template/dd_leaftype_declaration.ctmpl
+  leafobject: template/dd_leafobject_declaration.ctmpl
+  object: template/dd_object_declaration.ctmpl
+  string: template/dd_stringobject_declaration.ctmpl
+  function: template/dd_function_declaration.ctmpl
+  header: template/dd_header.ctmpl
+  typedef: template/dd_typedef.ctmpl

@@ -1,0 +1,10 @@
+/**
+ * @name: <Name>
+ * @type: <Type>
+ * @key: <Key>
+ * @context: <Context>
+ * @description: <Description>
+*/
+typedef struct {
+<CHILDREN_TYPES>
+} <Name>_t;

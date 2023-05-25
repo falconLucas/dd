@@ -1,0 +1,197 @@
+Types:
+  character:
+    Fields:
+    - Field: Name
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Key
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Value
+      Type: str
+      Required: false
+      GenerateCode: true
+    - Field: Encoding
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: EncodingOptions
+      Type:
+      - ASCII
+      - UTF-8
+      Required: false
+      GenerateCode: false
+    IsLeaf: true
+  string:
+    Fields:
+    - Field: Name
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Key
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Value
+      Type: str
+      Required: false
+      GenerateCode: true
+    - Field: Encoding
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: EncodingOptions
+      Type:
+      - ASCII
+      - UTF-8
+      Required: false
+      GenerateCode: false
+    IsLeaf: true
+  integer:
+    Fields:
+    - Field: Name
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Key
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Description
+      Type: string
+      Required: false
+      GenerateCode: false
+    - Field: Value
+      Type: int
+      Required: false
+      GenerateCode: true
+    - Field: ValueMin
+      Type: int
+      Required: true
+      GenerateCode: false
+    - Field: ValueMax
+      Type: int
+      Required: true
+      GenerateCode: false
+    - Field: Resolution
+      Type: int
+      Required: true
+      GenerateCode: false
+    - Field: Unit
+      Type: string
+      Required: false
+      GenerateCode: false
+    IsLeaf: true
+  floating_point:
+    Fields:
+    - Field: Name
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Key
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Value
+      Type: float
+      Required: false
+      GenerateCode: true
+    - Field: ValueMin
+      Type: float
+      Required: true
+      GenerateCode: false
+    - Field: ValueMax
+      Type: float
+      Required: true
+      GenerateCode: false
+    - Field: Resolution
+      Type: float
+      Required: true
+      GenerateCode: false
+    - Field: Unit
+      Type: string
+      Required: false
+      GenerateCode: false
+    IsLeaf: true
+  array:
+    Fields:
+    - Field: Name
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Key
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Items
+      Type: list
+      Required: true
+      GenerateCode: true
+    - Field: Values
+      Required: true
+      GenerateCode: false
+    - Field: Unit
+      Type: string
+      Required: false
+      GenerateCode: false
+    - Field: Length
+      Type: int
+      Required: false
+      GenerateCode: false
+    IsLeaf: false
+  list:
+    Fields:
+    - Field: Name
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Key
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Items
+      Type: list
+      Required: true
+      GenerateCode: true
+    IsLeaf: false
+  data:
+    Fields:
+    - Field: Name
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Version
+      Type: str
+      Required: false
+      GenerateCode: false
+    - Field: Description
+      Type: str
+      Required: false
+      GenerateCode: false
+    - Field: Key
+      Type: str
+      Required: true
+      GenerateCode: false
+    - Field: Data
+      Required: true
+      GenerateCode: true
+    IsLeaf: false
+FieldWhitelist:
+  - Comment
+  - Data
+  - Description
+  - Encoding
+  - Items
+  - Key
+  - Length
+  - Name
+  - Resolution
+  - Type
+  - Value
+  - ValueMax
+  - ValueMin
+  - Values
+  - Version
+  - Unit

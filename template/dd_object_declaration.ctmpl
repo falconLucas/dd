@@ -1,0 +1,13 @@
+<Allocation> <Name>_t <Name> = {
+<CHILDREN_TYPES>
+};
+<Allocation> dd_object_t <Name>_child[] = {
+<CHILDREN_OBJECTS>
+};
+const dd_object_t <Name>_object = {
+    .type = <Type>,
+    .data = &<Name>,
+    .key = "<Key>",
+    .data_length = <DataLength>,
+    .child = <Name>_child,
+};

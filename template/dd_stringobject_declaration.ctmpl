@@ -1,0 +1,8 @@
+<Allocation> char <Name>[<DataLength>];
+const dd_object_t <Name>_object = {
+    .type = <Type>,
+    .data = <Name>,
+    .key = "<Key>",
+    .data_length = <DataLength>,
+    .child = NULL,
+};
